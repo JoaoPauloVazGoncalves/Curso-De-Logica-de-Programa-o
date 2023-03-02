@@ -1,0 +1,321 @@
+---------------------------------------------------------------------------------//------------------------------------------------------------------------------------
+									    ALGORITIMOS
+
+-DEFINIÇAO : "Algoritimos sao um conjunto de passos finitos e organizados para a soluçao de algum problema na vida real"
+*obs: para construir um algoritimo e necessecario reconhecer o padrao daquela coisa. ex: equaçao de segundo grau onde o padrao sao as formulas utilizadas pois sao sempre as mesmas.
+
+-Modulo de processamento: algo que processe um algoritimo. ex:um computador, um celular, uma televisao smart e etc...
+
+-Identaçao : E uma forma organizada de deixa o codigo, ou seja, deixar uma parte dentro da outra no codigo
+Esse tipo de tecnica e ultilizada por que ajuda muito na manutençao do codigo
+ex: no caso do IF que o bloco de resultado vai dentro do if
+
+Ex: Se (20 > 10) entao
+	escreva("20 e maior que 10")
+    Senao
+	escreva("10 e menor que 20")	
+    Fim-se
+
+							       PASSO A PASSO PARA CRIAR UM ALGORITMO 
+
+
+1º Logica de programaçao : como o programa vai funcionar e qual problema ele vai resolver.
+*obs: ferramentas geralmente utilizadas para isso : fluxograma, nassi shnailden, portugol( sao todos uma maneira de representar como o codigo ira funcionar)
+
+2º codificaçao : e o processo de transaformaçao da logica de programaçao em codigos para começar a funcionar o programa.
+
+3º sistema completo.
+
+
+								            VARIAVEIS
+
+regras para criaçao de uma variavel:
+------------------------------------
+1º Deve começar com uma letra
+2º Os proximos podem ser letras ou numeros 
+3º Nao podem ultilizar caracteres especias, execto o _
+4º Nao podem conter espaços em branco 
+5º Nao podem conter letras com acentos 
+6º Nao podem ser uma palavra reservada
+
+
+Tipos de variaveis
+------------------------------------
+Inteiro(int)
+*obs: exemplo -> 1, 4, 29, 732, 156
+Real(float)
+*obs: exemplo -> 2.0, 534.3, 3.14
+caractere(string)
+*obs: exemplo -> ("farmacia", "pedro", "ansiedade", "televisao")
+logico(bolean)
+*obs: exemplo -> verdadeiro ou falso
+------------------------------------
+
+Tipos de comandos
+
+*obs: os comando de saida servem para mostra alguma coisa na tela
+ex: escreva, escreval(em portugol)
+
+*obs: os comandos de entrada servem para inserir dados no algoritimo atraves da interaçao com o usuario
+ex: leia(em portugol)
+
+-------------------------------------
+
+Funçoes arititmeticas
+
+Abs: Valor absoluto
+Exp: Exponenciaçao
+RaizQ: Raiz quadrada
+Pi: retorna PI
+Sen: seno
+cos: coseno
+tan: tangente
+GraupRad: grau para Rad
+
+--------------------------------------
+
+Operadores Relacionais (sempre resultando em um valor logico (verdadeiro ou falso))
+
+> (maior que)
+< (menor que)
+>= (maior ou igual a)
+= (igual a)
+<> (diferente de)
+
+------------------------------------
+
+Operadores Logicos(Tambem retornam um valor logico)
+
+E(Para o resultado ser verdadeiro ambas afirmaçoes devem ser verdadeira)
+
+5 > 2 E 4 < 3 (falso: Porque 4 Nao é menor que 3) (valor retornado sera Falso)
+5 > 2 E 3 < 10 (verdadeiro : Porque 5 é maior que 2 e 3 é menor que 10) (Valor retornado sera Verdadeiro)
+
+OU(Para o resultado ser verdadeiro basta que somente uma das afirmaçoes seja verdadeira)
+
+5 > 2 OU 4 < 3 (Nesse caso e Verdadeiro pois 5 é maior que 2, e somente uma afirmaçao e nessecaria para ser verdadeiro) (Valor retornado sera Verdadeiro)
+5 < 2 OU 3 < 4 (Nessa caso e Falso pois as duas sentenças sao falsas pois 5 nao e menor que 2 e nem 3 e menor que 4) (Valor retornado sera Falso)
+
+Nao(Nesse aqui somente e trocado a resposta)
+
+5 Nao e maior que 2 (Nesse caso retorna Falso ja que 5 nao e maior que dois)
+2 Nao e maior que 5 (Nesse caso retorna Verdadeiro ja que 2 nao e maior que 5)
+-------------------------------------
+
+									ESTRUTURAS CONDICIONAIS
+
+Tipos de estruturas
+
+---------------------------------------------
+
+Estruturas condicional simples(Sao aqueles tipos de estruturas que execultam somente um bloco, caso a condiçao seja verdaeira nesse casso a variavel dinheiro ser maior que 1000)
+
+Se(dinheiro > 1000) entao
+  Escreva("Partiu viajar pelo mundao")
+FimSe
+
+---------------------------------------------
+
+Estruras condicional composta(Sao aqueles tipos de estruturas que execultam mais de um bloco, caso a condiçao seja verdadeira, ela roda o primeiro bloco caso nao seja
+ele vai execultar o segundo bloco de comando)
+
+Se(dinheiro > 1000) entao
+  Escreva("Partiu viajar mundao a fora")
+senao
+  Escreva("Esse ano nao iremos viajar porque a grana ta curta")
+FimSe
+
+---------------------------------------------
+
+Estrutura condicional alinhada (Sao aquelas que tem uma estrutura dentro da outra, ou seja, caso a primeira afirmaçao seja verdadeira ela ira colocar pra executar o que ta dentro)
+
+Se(dinheiro >= 10000) entao
+  Escreva("Partiu Disney")      ------------> primeira parte, Caso isso seja verdadeiro roda a primeira parte
+Senao
+  Se(dinheiro >= 5000) e (dinheiro < 10000) entao    -------------> segunda parte, No caso ira rodar nessa parte se ela for falsa
+   Escreva("vamos ver a familia no interior")                       ira rodar a segunda parte da estrutura que esta na parte de dentro
+  Senao
+   Escreva("Nao tem dinheiro :c! Nao vamos viajar")
+  Fim-se
+Fim-se
+
+---------------------------------------------
+
+Estrutura condicional escolha de caso (E um tipo de estrutura que vai verificar com escolhas, se um caso for real ele vai execultar aquele bloco caso nao seja ela vai conferir outra situaçao e fazer outro bloco e se nenhuma das outras for real o ultimo caso sera executado)
+
+Escolha(Variavel) -------------> obs : aqui e escolhida a variavel que vai ser analisada
+ Caso valor  --------------> caso esse valor seja real ele execulta esse bloco , caso nao ele testa no caso de baixo e por ai vai
+  Bloco A
+ Caso valor
+  Bloco B
+ Caso valor
+  Bloco C
+ OutroCaso ----------------> caso chegue att aqui e nenhum dos caso seja real ele ira execulta esse bloco
+  bloco D
+FimEscolha
+
+							 Atividade do criança esperança (Como exemplo)
+
+
+Escreval("-----------------------")
+Escreval("   Criança Esperança   ")
+Escreval("-----------------------")
+Escreval(" A sua doaçao vai fazer a diferença ")
+Escreval("  Para doar R$10  Digite [1] ")
+Escreval("  Para doar R$20  Digite [2] ")
+Escreval("  Para doar R$30  Digite [3] ")
+Escreval("  Para doar R$40  Digite [4] ")
+Escreval("  Para doar qualquer outro valor  Digite [5] ")
+Escreval("  Para cancelar a doaçao  Digite [6] ")
+Escreva(" Digite o valor que deseja doar ? ")
+leia (Doacao)
+Escolha Doacao
+  Caso 1
+        Valor <- 10
+  Caso 2
+        Valor <- 20
+  Caso 3
+        Valor <- 30
+  Caso 4
+        Valor <- 40
+  Caso 5
+        Escreva("Qual valor voce deseja doar ? ")
+        leia (valor)
+  Caso 6
+        Valor <- 0
+  FimEscolha
+  Escreval("---------------------------")
+  Escreval(" Voce fez a doaçao de R$", Valor)
+  Escreval("---------------------------")
+
+
+obs: Esse tipo de estrutura nao serve para testar valor tipo ( maior ou menor que alguma coisa )
+tambem funciona em algumas linguagens com string mais a maioria so aceita numeros inteiros ( nas outras linguagens esse tipo de estrutura se chama switch )
+---------------------------------------------
+
+				Estruturas de repetiçao
+
+A estrutura de repetição ENQUANTO vai permitir que você execute blocos de comandos várias vezes
+e simplificar a forma de representar lógicas que vão construir programas.
+Veja de uma maneira simples e objetiva como criar códigos que realizam repetições.
+
+A estrutura de repeticao Repita e como se fosse a Enquanto a diferenca e que o teste logico,
+que serve para ver quantas vezes aquela estrutura ira repetir, e feito no final , ou seja,
+dentro da propio estrutura
+
+obs: isso me garante que a estrutura Repita vai ser iniciada de qualquer jeito independente da situaçao
+ja o enquanto so vai acontecer se o teste logico retorna verdadeiro
+
+Ex: Enquanto (Nao arruamar o quarto) faca
+	fica de castigo castigo
+    FimEnquanto
+
+Nessa estrutura enquanto o quarto nao for arruma ele ira ficar rodando
+
+Ex : Repita
+	castigo
+     Ate (Arrumar o quarto)
+
+Nesse caso ele ja vai iniciar o castigo e ele so vai para quando o quarto 
+tiver arrumado, ou seja, o teste logico que decide se vai repitir ou nao e
+feito no final
+
+                              Procedimentos
+
+Procedimentos em Algoritmos. Aprenda a criar rotinas a serem executadas por programas. Nessa primeira aula de rotinas, aprenderemos como funciona a passagem de parâmetros por valor e referência. 
+
+Os procedimentos sao passos a passoa que sao pre configurados para deixar algum programa alem de mais leve mais facil de ser compreeendido.
+
+ex : Esse programa e um detector de peso , ele ve qual e o maior peso digitado pelo usuario e depois armazena
+
+Note que durante o programa esses passos aparecem 4 vezes iguaizinhos , ou seja, uma rotina
+Na hora de digitar alem de tomar tempo deixa o programa bem mais confuso para isso existe o procedimento
+LimpaTela
+   Escreval("----------------------------------")
+   EscrevaL(" D E T E C T O R  DE  P E S A D O ")
+   EscrevaL("Maior pesso ate agora : ", mai,"Kg")
+   Escreval("----------------------------------")
+
+Para criar um procedimento basta digitar:
+ 
+procedimento topo() -> Essa parte e a criaçao do procedimento , onde para criar e so digitar a palavra procedimento e depois o nome que esse procedimento vai ter nesse caso foi "topo()", os parenteses sao obrigatorios
+
+inicio -> Nesse "inicio" e onde começa os codigos que vao ser rodados quando o procedimento for chamado no codigo principal
+
+LimpaTela
+   Escreval("----------------------------------")
+   EscrevaL(" D E T E C T O R  DE  P E S A D O ")
+   EscrevaL("Maior pesso ate agora : ", mai,"Kg")
+   Escreval("----------------------------------")
+
+(Tudo isso aqui e o que vai ser executado quando o procedimento for chamado)
+
+FimProcedimento -> Nesse "Fim" mostra o final do procedimento
+
+
+Para fazer com que o procedimento rode no codigo basta digitar o nome que eu criei pra ele , que nesse caso foi topo()
+Fazendo com que o codigo tenha menos linhas e fique mais facil de ser compriendido alem de ficar mais leve na hora de roda
+e economizando bastante tempo na hora de digitar o codigo
+
+Var
+// Seção de Declarações das variáveis 
+   I : inteiro
+   N , pesado: caractere
+   p, mai: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  
+   topo() -> aqui era onde estava todas aquelas linhas que agora estao la dentro do procedimento
+
+   Para I <- 1 ate 5 faca
+    escreva("Digite o nome : ")
+    leia(N)
+    escreva("Digite o peso de ", n,": ")
+    leia(P)
+    se (P > mai) entao
+         mai <- P
+         pesado <- N
+
+   topo() -> aqui era onde estava todas aquelas linhas que agora estao la dentro do procedimento
+
+   FimPara
+  
+   topo() -> aqui era onde estava todas aquelas linhas que agora estao la dentro do procedimento
+
+   Escreval("A pessoa mais pesada foi ", pesado,"com", mai, " quilos")
+Fimalgoritmo
+
+				Passagem de parametros
+
+Os parametros sao informaçoes passadas atraves daqueles parenteses , topo(aqui dentro), que servem
+como informaçoes para fazer com que o procedimento execute uma determinada açao como por exemplo
+
+Procedimento Soma(num1, num2 : inteiro)
+Inicio
+ EscrevaL("Recebi o valor A", A)
+ EscrevaL("Recebi o valor B", B)
+ EscrevaL("A soma de A + B vale", A + B)
+FimProcedimento
+
+Dentro dos procedimentos tambem existem as passagens de parametros. Dentro dessas passagens
+existe alguns tipos que podem ser feitos. entre eles estao : A de valor, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
